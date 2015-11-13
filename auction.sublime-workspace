@@ -1,0 +1,642 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"last_lineup_i",
+				"last_lineup_recieved_item"
+			],
+			[
+				"last",
+				"last_lineup_recieved_item"
+			],
+			[
+				"glen_sy",
+				"glen_system_name"
+			],
+			[
+				"legacy",
+				"legacy_headend_id"
+			],
+			[
+				"requi",
+				"required_permission"
+			],
+			[
+				"parse_sys",
+				"parse_system_types"
+			],
+			[
+				"system",
+				"system_contacts"
+			],
+			[
+				"covera",
+				"coverage_editor_id"
+			],
+			[
+				"primary",
+				"primary_editor_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<p id=\"notice\"><%= notice %></p>\n\n<h1>Listing Bids</h1>\n\n<table>\n  <thead>\n    <tr>\n      <th>Item</th>\n      <th>Bidder</th>\n      <th colspan=\"3\"></th>\n    </tr>\n  </thead>\n\n  <tbody>\n    <% @bids.each do |bid| %>\n      <tr>\n        <td><%= bid.item.name %></td>\n        <td><%= bid.bidder %></td>\n        <td><%= link_to 'Show', bid %></td>\n      <!--  <td><%= link_to 'Edit', edit_bid_path(bid) %></td>\n        <td><%= link_to 'Destroy', bid, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n      -->\n      </tr>\n    <% end %>\n  </tbody>\n</table>\n\n<br>\n\n\n<%= link_to 'New Bid', new_bid_path %>\n",
+			"file": "app/views/bids/index.html.erb",
+			"file_size": 609,
+			"file_write_time": 1447374137000000,
+			"settings":
+			{
+				"buffer_size": 610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/bids/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/bids/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 261,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/items/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class BidsController < InheritedResources::Base\n\n\n\n\n  private\n\n    def bid_params\n      params.require(:bid).permit(:item_id, :bidder)\n    end\nend\n\n",
+			"file": "app/controllers/bids_controller.rb",
+			"file_size": 145,
+			"file_write_time": 1447373923000000,
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/config/application.rb",
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/config/log4r.yml",
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/app/models/system.rb",
+		"/Users/bshannon/Documents/notes/bluecross_contact_info.txt",
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/app/controllers/systems_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/app/helpers/systems_helper.rb",
+		"/Users/bshannon/sandbox/projects/lineups-backend-api/app/helpers/application_helper.rb",
+		"/Users/bshannon/.rvm/gems/ruby-2.1.5/gems/activerecord-4.2.4/lib/active_record/railtie.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/headend.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/doc/example_api_calls.txt",
+		"/Users/bshannon/sandbox/projects/lineup2/app/helpers/headends_helper.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/application_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/helpers/application_helper.rb",
+		"/Users/bshannon/Documents/EntityDB/queensbury_person.xsd",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/headends_controller.rb",
+		"/Users/bshannon/Documents/lineups/legacy_lineups_queries.sql",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/postal_codes_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/lib/filter_by_params.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/helpers/systems_helper.rb",
+		"/Users/bshannon/sandbox/projects/seeds.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/system.rb",
+		"/Users/bshannon/whitelist.txt",
+		"/Users/bshannon/Documents/Property Taxes:2014-2015.txt",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/systems_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/users_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/comment.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/config/initializers/pg_search.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/dataload/parse.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/dataload/raw/SYSTEM_C.D",
+		"/Users/bshannon/sandbox/projects/lineup2/models.svg",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/systems/_system.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/contact.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/market.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/postal_code.rb",
+		"/Users/bshannon/Documents/Status Updates/2014-10-12.txt",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/system_type.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/province.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/address.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/lineup_definition.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/provider.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/status.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/systems/show.html.erb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/systems/index.html.erb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/systems/_form.html.erb",
+		"/Users/bshannon/sandbox/projects/lineup2/dataload/apollo_headends.txt",
+		"/Users/bshannon/Documents/lineups/systems_payload_01.json",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/users/_user.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/contacts/_contact.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/contacts/show.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/addresses/_address.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/views/addresses/show.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/user.rb",
+		"/Users/bshannon/sandbox/projects/script.sh",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/system_comment.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/system_comments.rb",
+		"/Users/bshannon/Documents/Status Updates/2014-10-05.txt",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/system_contact.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/country.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/db/migrate/20141011033803_add_market_to_systems.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/models/provider_type.rb",
+		"/Users/bshannon/Documents/aws_servers.txt",
+		"/Users/bshannon/Documents/Random Notes/Development",
+		"/Users/bshannon/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/bshannon/Library/Application Support/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/Users/bshannon/Documents/EyeQ Ingest/2014-10-03.call.txt",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/lineup_items_controller.rb",
+		"/Users/bshannon/sandbox/projects/lineup2/app/controllers/markets_controller.rb",
+		"/Users/bshannon/sandbox/projects/junk/app/views/system_contacts/index.json.jbuilder",
+		"/Users/bshannon/sandbox/projects/lineup3/app/models/device_type.rb",
+		"/hold/showepisode.xml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"received",
+			"last_lineup_recieved_item",
+			"headend_item",
+			"last_lineup_recieved_item",
+			"last_lineup_recieved",
+			"failure",
+			"fail",
+			"headends",
+			"included_models",
+			"included",
+			"included_model",
+			"protected",
+			"unlinked",
+			"raw",
+			"gsub",
+			"systems_dnu",
+			"puts",
+			"headend_to_mso",
+			"systems_dnu",
+			"comment_from_text",
+			"@system_name",
+			"#{system_name}",
+			"system_name",
+			"system_params",
+			"episodic",
+			"parse_status",
+			"prase_status",
+			"titlecase",
+			"systems_dnu",
+			"parse_headends",
+			"title",
+			"apollo_msos",
+			"parse_country",
+			"parse_comm",
+			"systems_dnu",
+			"systemsDNU",
+			"system_types",
+			"systemsDNU",
+			"system_type_id",
+			"white",
+			"autocomplete",
+			"get_permissions",
+			"handle_aceess_denied",
+			"handle_access_denied",
+			"unauthor",
+			"unauthorized",
+			"build_response",
+			"22",
+			"url",
+			"email",
+			"22",
+			"24",
+			"attributes",
+			"uniqueness",
+			"created",
+			"coverage_editor",
+			"contact",
+			"addresses",
+			"Contact",
+			"market",
+			"coverage_editor_id",
+			"elasticsearch0",
+			"elasticsearch01",
+			"primary_editor",
+			"json",
+			"end",
+			"json",
+			"random_statistic_type"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"headend_item",
+			"last_lineup_recieved_item",
+			"systems_dnu"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/bids/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								570,
+								570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/bids/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/bids/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/items/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 1011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								785,
+								785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/bids_controller.rb",
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"application_helper",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"application_help",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"headend.rb",
+				"app/models/headend.rb"
+			],
+			[
+				"headends_con",
+				"app/controllers/headends_controller.rb"
+			],
+			[
+				"application_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"systems_cont",
+				"app/controllers/systems_controller.rb"
+			],
+			[
+				"head",
+				"app/models/headend.rb"
+			],
+			[
+				"headend_help",
+				"app/helpers/headends_helper.rb"
+			],
+			[
+				"filterby",
+				"lib/filter_by_params.rb"
+			],
+			[
+				"userscontr",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"search",
+				"config/initializers/pg_search.rb"
+			],
+			[
+				"comment",
+				"app/models/comment.rb"
+			],
+			[
+				"userscon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"systemscon",
+				"app/controllers/systems_controller.rb"
+			],
+			[
+				"system.rb",
+				"app/models/system.rb"
+			],
+			[
+				"provider.rb",
+				"app/models/provider.rb"
+			],
+			[
+				"system/_system",
+				"app/views/systems/_system.json.jbuilder"
+			],
+			[
+				"system/show",
+				"app/views/systems/show.html.erb"
+			],
+			[
+				"system/_form",
+				"app/views/systems/_form.html.erb"
+			],
+			[
+				"system/index",
+				"app/views/systems/index.html.erb"
+			],
+			[
+				"system/s",
+				"app/views/systems/show.html.erb"
+			],
+			[
+				"address.r",
+				"app/models/address.rb"
+			],
+			[
+				"_user.js",
+				"app/views/users/_user.json.jbuilder"
+			],
+			[
+				"headend",
+				"app/models/headend.rb"
+			],
+			[
+				"system_c",
+				"app/models/system_contact.rb"
+			],
+			[
+				"system_contac",
+				"app/models/system_contact.rb"
+			],
+			[
+				"contact.rb",
+				"app/models/contact.rb"
+			],
+			[
+				"market",
+				"app/models/market.rb"
+			],
+			[
+				"add_market",
+				"db/migrate/20141011033803_add_market_to_systems.rb"
+			],
+			[
+				"script.sh",
+				"/Users/bshannon/sandbox/projects/script.sh"
+			],
+			[
+				"views/_address",
+				"projects/lineup2/app/views/addresses/_address.json.jbuilder"
+			],
+			[
+				"views/_system",
+				"projects/lineup2/app/views/systems/_system.json.jbuilder"
+			],
+			[
+				"models/system.rb",
+				"projects/lineup2/app/models/system.rb"
+			],
+			[
+				"seeds.rb",
+				"projects/seeds.rb"
+			],
+			[
+				"views/systems/_sys",
+				"projects/lineup2/app/views/systems/_system.json.jbuilder"
+			],
+			[
+				"systemsindex.json.jbu",
+				"projects/junk/app/views/system_contacts/index.json.jbuilder"
+			],
+			[
+				"_system.js",
+				"projects/lineup2/app/views/systems/_system.json.jbuilder"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true
+}

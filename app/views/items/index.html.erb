@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Current Bid</th>
+      <th>Mininum bid</th>
+      <th>Bid increment</th>
+      <th>Image</th>
+      <th>Donator</th>
+      <th>New Bid</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+        <td><%= item.current_bid %></td>
+        <td><%= item.mininum_bid %></td>
+        <td><%= item.bid_increment %></td>
+        <td><%= item.image %></td>
+        <td><%= item.donator %></td>
+        <td><%= link_to 'Bid', new_bid_path(item: item, bidder: 'bshannon') %></td>
+        <td><%= link_to 'Details', item %></td>
+        <!--<td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

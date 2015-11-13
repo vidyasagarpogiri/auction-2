@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Mininum bid:</strong>
+  <%= @item.mininum_bid %>
+</p>
+
+<p>
+  <strong>Bid increment:</strong>
+  <%= @item.bid_increment %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @item.image %>
+</p>
+
+<p>
+  <strong>Donator:</strong>
+  <%= @item.donator %>
+</p>
+
+
+<p>
+  <strong>Current bids:</strong>
+</p>
+<%= render 'bids/simple_bids_index', {bids: @item.bids} %>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
